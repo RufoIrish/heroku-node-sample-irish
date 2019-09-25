@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6u36oPBgnjGBO2T0a1aA-1QE4WTBBck9m2xQeuS_RP_IqN7W2") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font: 13px Helvetica, Arial;
+    text-align: center;
+    background-color: bisque;
+}
+
+form {
+    /* background: #17a2b8; */
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    margin-left: 25%;
+    /* text-align: center; */
+}
+
+form input {
+    border: 0;
+    padding: 10px;
+    width: 90%;
+    /* margin-right: 25%; */
+}
+
+#messages li {
+    /* padding: 5px 10px;
+    /* color: bisque;
+    border: 2px salmon; */
+    height: 10%;
+    width: 40%;
+    font-family: "Times New Roman";
+    font-size: 20px;
+    /* border: 1px solid #eff0f1; */
+    padding-top: 10px;
+}
+
+
+/*         
+#messages li:nth-child(odd) {
+    border-style: groove;
+}
+ */
+
+#messages {
+    list-style-type: none;
+    max-height: 500px;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#online {
+    /* margin-left: 20%; */
+    margin-right: 2%;
+}
+
+#send {
+    margin-bottom: 10%;
+}
+
+body img {
+    width: 500px;
+    height: auto;
+    text-align: center;
+}
+
+#start {
+    text-align: center;
+    margin-right: 25%;
+}
+
+input[type=text],
+select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10%;
+}
+
+#wNickName {
+    margin-top: 25%;
+}
+
+.nav {
+    margin-top: 2%;
+    position: fixed;
+    margin-left: 80%;
+}
+
+#m {
+    width: 50%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 1px 12px 0px #e3e841;
+    margin-bottom: 12%;
+    box-sizing: border-box;
+}
+
+#alert {
+    display: none;
+    width: 300px;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+}
+
+#messagesDiv {
+    margin-left: 10%;
+    margin-top: 4%;
+    margin-bottom: 12%;
+    box-sizing: content-box;
+    width: 50%;
+    height: 500px;
+    padding: 30px;
+    background-color: #6944ad;
+    border: 5px solid rgb(192, 167, 233);
+    box-shadow: 5px 6px 17px 5px #b792e0;
+    border-radius: 20px;
+}

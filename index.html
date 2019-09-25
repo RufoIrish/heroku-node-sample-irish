@@ -1,1 +1,65 @@
-hello world!
+<!doctype html>
+<html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="jquery.chatbubble.min.js"></script>
+
+
+<head>
+    <title>Socket.IO chat</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="start" style="display : inline;">
+            <center>
+                <img src="https://media.giphy.com/media/JJQDhGQtDReHS/giphy.gif">
+                <br><br><br><br><br><br>
+                <button class="btn btn-primary">Get Started</button>
+            </center>
+        </div>
+
+        <div id="wNickname" style="display : none">
+            <center>
+                <input type="text" autocomplete="on" id="nickName" placeholder="NickName"><br><br><br>
+                <button type="submit" class="btn btn-danger" id="submit">Proceed</button>
+            </center>
+        </div>
+        <!-- <div id="alert">The username is already taken from the other online user.<br>Try to look for another username.</div> -->
+        <div id="goChat" style="display : none;">
+
+            <h1 style=" color : #7d32a8; margin-left: 40%;  text-shadow: 3px 2px red;  "> Hello : </h1>
+            <hr color="white">
+
+            <div class="nav">
+                <button id="logOut" class="btn btn-danger" style="display : none">LogOut</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Online</button>
+                <div class="dropdown-menu">
+                    <h5 class="dropdown-header">Chat your Friends!</h5>
+                    <p id="online" class="dropdown-item"></p>
+                </div>
+            </div>
+            <div id="messagesDiv">
+                <ul id="messages"></ul>
+            </div>
+            <form action="">
+                <input placeholder="write your message .." id="m" autocomplete="off">
+        </div>
+    </div>
+    </form>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="code.js"></script>
+</body>
+
+</html>
